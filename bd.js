@@ -3,6 +3,7 @@ const mysql = require("mysql-await");
 
 const con = mysql.createConnection({
   host: "localhost",
+  port: "3307",
   user: "root",
   password: "root",
   database: "IEI",
