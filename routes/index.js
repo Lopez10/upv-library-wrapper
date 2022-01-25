@@ -19,9 +19,9 @@ router.post("/provincias", async (req, res) => {
 });
 
 router.get("/busqueda", async (req, res) => {
+  console.log(req.query);
   let data = req.query;
   let result = await busquedaPorNombre(data);
-  console.log(result);
   // res.header("Access-Control-Allow-Origin", "*");
   // res.header(
   //   "Access-Control-Allow-Headers",
